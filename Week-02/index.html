@@ -19,10 +19,9 @@
                 <a href="https://www.github.com/" target="_blank"><img src="img/git-hub.png" alt="Github"></a>
             </nav>
         </header>
-        <aside>
             <nav>
                 <input type="text" placeholder="Search..">
-                <img src="img/cross.png">
+                <img src="img/cross.png" alt="cross-icon">
                 <p>Menu</p>
                 <button><p><a href="#TOP">HOME</a></p></button>
                 <button><p>SIGN UP</p></button>
@@ -33,14 +32,13 @@
                     Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante 
                     interdum. Sed nulla amet lorem feugiat tempus aliquam.
                 </p>
-                <img src="img/mail.png">
+                <img src="img/mail.png" alt="mail-icon">
                 <li>info.megarocket@megarocket.com</li>
-                <img src="img/phone.png">
+                <img src="img/phone.png" alt="phone-icon">
                 <li>54-341-xxxxxxxxx</li>
-                <img src="img/house.png">
+                <img src="img/house.png" alt="house-icon">
                 <li>AAA xxx, Rosario, Argentina, CP 2000</li>
             </nav>
-        </aside>
         <section id="welcome-page">
             <h2>Welcome to MEGA ROCKET</h2>
             <h3>Winner of Lorem Ipsum of the year</h3>
@@ -64,38 +62,74 @@
                     quis veritatis at laborum reprehenderit sequi!
                     </p>
                 </details>
-                <img src="img/people-working-photo.png">
+                <img src="img/people-working-photo.png" alt="people-working-photo">
         </section>
         <section id="app-features">
             <h2>App Features</h2>
             <h3>Appointment booking</h3>
-            <img src="img/vector1.png">
+            <img src="img/vector1.png" alt="appointment-booking-logo">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                 and scrambled it to make a type specimen book.
             </p>
             <h3>Schedule and timetables</h3>
-            <img src="img/vector2.png">
+            <img src="img/vector2.png" alt="schedule-and-timetables-logo">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
                 and scrambled it to make a type specimen book.
             </p>
             <h3>Membership management</h3>
-            <img src="img/vector3.png">
+            <img src="img/vector3.png" alt="membership-management-logo">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
                 and scrambled it to make a type specimen book.
             </p>
             <h3>Contact and suggestions</h3>
-            <img src="img/vector4.png">
+            <img src="img/vector4.png" alt="contact-and-suggestions">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
                 and scrambled it to make a type specimen book.
             </p>
+        </section>
+        <secion id="contact-form">
+            <h2>Contact</h2>
+            <form>
+                <div id="name-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="write here" name="name" required>
+                </div>
+
+                <div id="surname">
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="surname" placeholder="write here" required>
+                </div>
+
+                <div id="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="write here" name="email" required>
+                </div>
+
+                <div id="contact-reason">
+                <label>Contact Reason:
+                <select>
+                    <option value="option1" required>I want to know about membership and cost</option>
+                    <option value="option2" required>I want to make a question or suggestion</option>
+                    <option value="option3" required>I want to make a contact</option>
+                </select>
+                </label>
+                </div>
+
+                <div id="message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="write here"></textarea>
+                <button type="submit">Send message</button>
+                <button type="reset">Reset</button>
+                </div>
+            </form>
         </section>
     </main>
 </body>
