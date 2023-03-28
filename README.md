@@ -1,9 +1,14 @@
-# Become a Software Professional 2023
+# Mega Rocket GYM
 
-## Week 01
-Created figma prototype
+The Mega Rocket GYM project is a gym website that serves as a tool to organize the activities of users, 
+trainers, classes, among other things.
+
+## Week 01 
+
+We worked on figma, prototyped all the pages of the site and made the necessary connections.
 
 ## Week 02
-Created the index.html
+We create the landing page of the site based on the figma, respecting the semantics and structure.
+
 ## Authors
 -Iván Galarza
