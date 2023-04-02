@@ -1,4 +1,149 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* SIDEBAR HIDDEN */
+.sidebar {
+    display: none;
 }
 
+.contact-info-bar {
+    display: none;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Roboto', sans-serif, Calibri, 'Gill Sans';
+    margin: 0px 50px;
+    background-color: white;
+    font-size: 15px;
+}
+
+/* HEADER */
+
+header {
+   /* background-color: red; */
+    height: 150px;
+    margin-top: 40px;
+    border-bottom: 5px black;
+}
+
+.social-media-imgs img {
+    position: relative;
+    left: 1350px;
+    bottom: 165px;
+    /* background-color: blue; */
+    width: 45px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.header-title {
+    color: #37386766;
+    font-size: 30px;
+    font-weight: bold;
+    /*background-color: rgb(16, 172, 24);*/ 
+    width: 200px;
+    margin-top: 80px;
+    
+}
+
+hr {
+    height: 9px;
+    background-color: #AACE9B;
+    border: none;
+}
+
+/* MAIN SECTION */
+
+#welcome-page {
+    background-color: #F7FBF5;
+    height: 450px;
+    padding-bottom: 270px;
+    border-bottom: 20px rgb(0, 255, 55);
+    padding-top: 12px;
+}
+
+.wp-left {
+    width: 500px;
+    height: 500px;
+    margin-top: 5px;
+    width: 600px;
+    margin: 125px 0px 0px 12px;
+}
+
+.wp-left h1 {
+    color: #373867;
+    font-weight: bold;
+}
+
+.wp-left h2 {
+    color: #37386766;
+    font-weight: bold;
+}
+
+.wp-left p {
+    color: #37386766;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 80px;
+}
+
+.wp-left button{
+    background-color: #AACE9B;
+    border: none;
+    width: 154px;
+    height: 49px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: bold;
+    color: #373867;
+    margin-top: 50px;
+    margin-left: 12px;
+}
+
+.wp-right img{
+    width: 625px;
+    height: 625px;
+    margin-left: 1180px;
+    margin-top: -580px;
+}
+
+/* APP FEATURES SECTION*/
+
+.appointment-class {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(112, 112, 139);
+    width: 650px;
+    height: 400px;
+}
+
+.schedule-class {
+    position: relative;
+}
+
+.appointment-class p {
+    position: relative;
+    padding: 50px 0px ;
+    width: 435px;
+    font-size: 14px;
+    color: #373867;
+    font-weight: 600;
+    line-height: 16.41px;
+    left: 175px;
+    text-align: left;
+    bottom: 100px;
+}
+
+.appointment-class h3 {
+    position: relative;
+    padding: 50px 0px ;
+    width: 435px;
+    font-size: 40px;
+    color: #373867;
+    font-weight: 600;
+    line-height: 16.41px;
+    left: 175px;
+    text-align: left;
+    top: 120px;
+}
