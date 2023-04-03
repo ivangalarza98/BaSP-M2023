@@ -37,15 +37,15 @@
             </nav>
         </header>
         <hr>
-            <nav class="sidebar">
-                <input type="text" placeholder="Search..">
-                <img src="assets/imgs/cross.png" alt="Menu cross icon">
-                <p>Menu</p>
-                <button type="button">HOME</button>
-                <button type="button">SIGN UP</button>
-                <button type="button">LOG IN</button>
-                <button type="button">CONTACT</button>
-            </nav>
+        <nav class="sidebar">
+            <input type="text" placeholder="Search..">
+            <img src="assets/imgs/cross.png" alt="Menu cross icon">
+            <p>Menu</p>
+            <button type="button">HOME</button>
+            <button type="button">SIGN UP</button>
+            <button type="button">LOG IN</button>
+            <button type="button">CONTACT</button>
+        </nav>
         <main>
             <section class="contact-info-bar">
             <h2>Contact us</h2>
@@ -80,8 +80,10 @@
                     <img src="assets/imgs/people-working-photo.png" alt="People working on gym">
                 </div>
             </section>
+            <hr class="sep-line-gen">
             <section id="app-features">
                 <h2>App Features</h2>
+                <hr class="app-features-div">
                 <div class="appointment-class">
                     <h3>Appointment booking</h3>
                     <img src="assets/imgs/vector1.png" alt="Appointment booking image">
@@ -100,7 +102,7 @@
                         and scrambled it to make a type specimen book.
                     </p>
                 </div>
-                <div>
+                <div class="membership-manag">
                     <h3>Membership management</h3>
                     <img src="assets/imgs/vector3.png" alt="Membership management image">
                     <p>
@@ -108,8 +110,8 @@
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
                         and scrambled it to make a type specimen book.
                     </p>
-
-
+                </div>
+                <div class="contact-suggestions">
                     <h3>Contact and suggestions</h3>
                     <img src="assets/imgs/vector4.png" alt="Contact and suggestions image">
                     <p>
@@ -117,28 +119,42 @@
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
                         and scrambled it to make a type specimen book.
                     </p>
+                    <hr class="sep-line-gen">
                 </div>
             </section>
             <section id="contact-form">
                 <h2>Contact</h2>
                 <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="write here" name="name" required>
-                    <label for="surname">Last name:</label>
-                    <input type="text" id="surname" name="surname" placeholder="write here" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="write here" name="email" required>
-                    <label for="contact-reason">Contact Reason:</label>
-                    <select>
-                        <option value="option1" required>I want to know about membership and cost</option>
-                        <option value="option2" required>I want to make a question or suggestion</option>
-                        <option value="option3" required>I want to make a contact</option>
-                    </select>
-                    <label for="message">Message:</label>
-                    <input type="message">
-                    <textarea id="message" name="message" rows="5" placeholder="write here" required></textarea>
-                    <button type="submit">Send message</button>
-                    <button type="reset">Reset</button>
+                    <div class="form-name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Write here" name="name" required>
+                    </div>
+
+                    <div class="form-surname">
+                        <label for="surname">Last name</label>
+                        <input type="text" id="surname" name="surname" placeholder="Write here" required>
+                    </div>
+
+                    <div class="form-email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Write here" name="email" required>
+                    </div>
+
+                    <div class="form-contact-reason">
+                        <label for="contact-reason">Contact Reason</label>
+                        <select>
+                            <option value="option1" required>I want to know about membership and cost</option>
+                            <option value="option2" required>I want to make a question or suggestion</option>
+                            <option value="option3" required>I want to make a contact</option>
+                        </select>
+                    </div>
+                        <div class="form-message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write here" required></textarea>
+                    </div>
+                    <button class="send-message-button" type="submit">Send It</button>
+                    <button class="reset-button" type="reset">Clear</button>
+                    <hr class="sep-line-gen">
                 </form>
             </section>
             <section id="history-section">
