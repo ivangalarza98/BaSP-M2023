@@ -10,48 +10,46 @@
 /* BODY */
 
 body {
-    font-family: 'Roboto', sans-serif, Calibri, 'Gill Sans';
     margin: 0px 50px;
     background-color: white;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif, Calibri, 'Gill Sans';
 }
 
 /* HEADER */
 
 header {
-   /* background-color: red; */
     height: 150px;
     margin-top: 40px;
-    border-bottom: 5px black;
 }
 
 .social-media-imgs img {
     position: relative;
-    left: 1350px;
+    display: inline;
+    float: right;
     bottom: 165px;
-    /* background-color: blue; */
     width: 45px;
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 .header-title {
-    color: #37386766;
-    font-size: 30px;
-    font-weight: bold;
-    /*background-color: rgb(16, 172, 24);*/ 
     width: 200px;
     margin-top: 80px;
-    
+    font-size: 30px;
+    font-weight: bold;
+    color: #37386766;
 }
 
-hr {
+/* separation bars */
+
+.sep-bar-green {
     height: 9px;
     background-color: #AACE9B;
     border: none;
 }
 
-.sep-line-gen {
+.sep-bar-gen {
     height: 2px;
     background-color: #DDE1E3;
     border: none;
@@ -60,51 +58,54 @@ hr {
 /* MAIN SECTION */
 
 #welcome-page {
-    background-color: #F7FBF5;
     height: 450px;
     padding-bottom: 270px;
-    border-bottom: 20px rgb(0, 255, 55);
     padding-top: 12px;
+    margin-top: 5px;
     margin-bottom: 50px;
+    background-color: #F7FBF5;
+    border-bottom: 20px rgb(0, 255, 55);
 }
 
 .wp-left {
-    width: 500px;
+    width: 600px;
     height: 500px;
     margin-top: 5px;
-    width: 600px;
     margin: 125px 0px 0px 12px;
 }
 
 .wp-left h1 {
     color: #373867;
     font-weight: bold;
+    font-size: 40px;
 }
 
 .wp-left h2 {
     color: #37386766;
+    margin-top: 30px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .wp-left p {
     color: #37386766;
+    margin-top: 80px;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 80px;
 }
 
-.wp-left button{
-    background-color: #AACE9B;
-    border: none;
+.btn-green {
+    color: #373867;
     width: 154px;
     height: 49px;
+    margin-top: 50px;
+    margin-left: 12px;
+    background-color: #AACE9B;
+    border: none;
     border-radius: 5px;
     font-size: 16px;
     line-height: 18.75px;
     font-weight: bold;
-    color: #373867;
-    margin-top: 50px;
-    margin-left: 12px;
 }
 
 .wp-right img{
@@ -115,376 +116,64 @@ hr {
 }
 
 /* APP FEATURES SECTION*/
-
 /* App features title*/
-#app-features h2 {
+
+.app-features {
+    margin-top: 50px;
+    background-color: red;
+}
+
+.app-features h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
     color: #373867;
-    margin-top: 40px;
 }
 
-.app-features-div {
-    position: relative;
-    height: 4px;
-    background-color: #AACE9B;
-    border: none;
-    width: 165px;
-    right: 820px;
-    bottom:5px;
-}
-
-/* Appointment booking*/
-.appointment-class {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-    width: 650px;
-    height: 350px;
-}
-
-.appointment-class img {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-}
-
-.appointment-class p {
-    position: relative;
-    padding: 50px 0px ;
-    width: 435px;
-    font-size: 14px;
-    color: #373867;
-    font-weight: 500;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    bottom: 130px;
-}
-
-.appointment-class h3 {
-    position: relative;
-    padding: 50px 0px ;
-    width: 435px;
+.app-features h3 {
     font-size: 40px;
     color: #373867;
-    font-weight: 600;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    top: 95px;
 }
 
-/* Schedule and timetables*/
 
-.schedule-class {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-    width: 650px;
-    height: 350px;
+/* Contact form section */
+
+#contact-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: yellow;
 }
-
-.schedule-class img {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-}
-
-.schedule-class p {
-    position: relative;
-    padding: 50px 0px ;
-    width: 435px;
-    font-size: 14px;
-    color: #373867;
-    font-weight: 500;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    bottom: 125px;
-}
-
-.schedule-class h3 {
-    position: relative;
-    padding: 50px 0px ;
-    width: 500px;
-    font-size: 40px;
-    color: #373867;
-    font-weight: 600;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    top: 95px;
-}
-
-/* Membership management*/
-
-.membership-manag {
-    position: relative;
-    bottom: 800px;
-    left: 1125px;
-    width: 675px;
-    height: 350px;
-}
-
-.membership-manag img {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-}
-
-.membership-manag p {
-    position: relative;
-    padding: 50px 0px ;
-    width: 435px;
-    font-size: 14px;
-    color: #373867;
-    font-weight: 500;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    bottom: 125px;
-}
-
-.membership-manag h3 {
-    position: relative;
-    padding: 50px 0px ;
-    width: 500px;
-    font-size: 40px;
-    color: #373867;
-    font-weight: 600;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    top: 95px;
-}
-
-/* contact-sugestions */
-
-.contact-suggestions {
-    position: relative;
-    bottom: 800px;
-    left: 1125px;
-    width: 675px;
-    height: 350px;
-}
-
-.contact-suggestions img {
-    position: relative;
-    bottom: 25px;
-    left: 0px;
-}
-
-.contact-suggestions p {
-    position: relative;
-    padding: 50px 0px ;
-    width: 435px;
-    font-size: 14px;
-    color: #373867;
-    font-weight: 500;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    bottom: 125px;
-}
-
-.contact-suggestions h3 {
-    position: relative;
-    padding: 50px 0px ;
-    width: 500px;
-    font-size: 40px;
-    color: #373867;
-    font-weight: 600;
-    line-height: 16.41px;
-    left: 175px;
-    text-align: left;
-    top: 95px;
-}
-
-.contact-suggestions hr {
-    position: relative;
-    width: 1800px;
-    right: 1125px;
-    bottom: 40px;
-}
-
-/* contact form section */
 
 #contact-form h2 {
-    position: relative;
+    color: #373867;
     font-size: 30px;
-    color: #373867;
-    bottom: 600px;
     font-weight: bold;
-}
-
-/* first name */
-
-.form-name {
-    position: relative;
-    bottom: 565px;
-    font-size: 14px;
-}
-
-.form-name label {
-    position: relative;
-    font-weight: bold;
-    bottom: 35px;
-    color: #373867;
-}
-
-.form-name input {
-    color: #9B9CB3;
-    font-weight: 400px;
-    width: 570px;
-    height: 36px;
-    text-indent: 10px;
-    margin-left: -43px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-}
-
-/* last name */
-
-.form-surname {
-    position: relative;
-    bottom: 566px;
-    font-size: 14px;
-    left: 580px;
-    bottom: 605px;
-}
-
-.form-surname label {
-    position: relative;
-    font-weight: bold;
-    bottom: 35px;
-    left: 33px;
-    color: #373867;
-}
-
-.form-surname input {
-    color: #9B9CB3;
-    font-weight: 400px;
-    width: 570px;
-    height: 36px;
-    text-indent: 10px;
-    margin-left: -43px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-}
-
-/* email */
-
-.form-email {
-    position: relative;
-    font-size: 14px;
-    left: 1225px;
-    bottom: 645px;
-}
-
-.form-email label {
-    position: relative;
-    font-weight: bold;
-    bottom: 35px;
-    left: 0px;
-    color: #373867;
-}
-
-.form-email input {
-    color: #9B9CB3;
-    font-weight: 400px;
-    width: 570px;
-    height: 36px;
-    text-indent: 10px;
-    margin-left: -43px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-}
-
-/* contact reason */
-
-.form-contact-reason {
-    position: relative;
-    bottom: 566px;
-    font-size: 14px;
-    left: 0px;
-    bottom: 550px;
-}
-
-.form-contact-reason label {
-    position: relative;
-    font-weight: bold;
-    bottom: 35px;
-    left: 0px;
-    color: #373867;
-}
-
-.form-contact-reason select {
-    color: #9B9CB3;
-    font-weight: 400px;
-    width: 900px;
-    height: 40px;
-    text-indent: 4px;
-    margin-left: -115px;
-    border: 1px solid #373867;
-    background-color: white;
-    border-radius: 4px;
-}
-
-/* message */
-
-.form-message {
-    position: relative;
-    bottom: 566px;
-    font-size: 14px;
-    left: 0px;
-    bottom: 470px;
-}
-
-.form-message label {
-    position: relative;
-    font-weight: bold;
-    bottom: 35px;
-    left: 0px;
-    color: #373867;
-}
-
-.form-message textarea {
-    color: #9B9CB3;
-    font-weight: 400px;
-    width: 1790px;
-    height: 170px;
-    text-indent: 10px;
-    margin-left: 0px;
-    border: 1px solid #E0E0E0;
-    border-radius: 4px;
-}
-
-form .reset-button {
-    position: relative;
-    background-color: white;
-    border: 1px solid #373867;
-    color: #373867;
-    font-weight: bold;
-    bottom: 400px;
-    right: 164px;
-    width: 160px;
-    height: 45px;
-    border-radius: 5px;
-}
-
-form .send-message-button {
-    position: relative;
-    background-color: #AACE9B;
-    border: 1px solid #AACE9B;
-    color: #373867;
-    font-weight: bold;
-    bottom: 400px;
-    left: 280px;
-    width: 160px;
-    height: 45px;
-    border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 form .sep-line-gen {
     position: relative;
     bottom: 300px;
+}
+
+/* contact inputs positions */
+
+.form-name {
+    position: relative;
+    display: inline;
+}
+
+.form-surname {
+    position: relative;
+    display: inline;
+}
+
+.form-email {
+    position: relative;
+    display: inline;
+}
+
+.form-message #message {
+    position: relative;
+    display: block;
 }
