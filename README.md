@@ -1,4 +1,4 @@
-# Mega Rockey GYM 
+# Mega Rocket GYM 
 
 _The Mega Rocket GYM project is a gym website that serves as a tool to organize the activities of users, trainers, classes, among other things._
 
