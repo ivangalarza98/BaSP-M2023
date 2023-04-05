@@ -8,8 +8,8 @@
 }
 
 /* BODY */
-
 body {
+    overflow-x: hidden;
     margin: 0px 50px;
     background-color: white;
     font-size: 15px;
@@ -17,38 +17,37 @@ body {
 }
 
 /* HEADER */
-
 header {
     height: 150px;
     margin-top: 40px;
+    border-bottom: 10px solid #AACE9B;
 }
 
-.social-media-imgs img {
-    position: relative;
-    display: inline;
-    float: right;
-    bottom: 165px;
-    width: 45px;
-    margin-right: 40px;
-    margin-top: 65px;
+header nav {
+    text-align: right;
 }
 
-.header-title {
+.title {
+    float: left;
     width: 200px;
-    margin-top: 80px;
+    margin-top: 105px;
     font-size: 30px;
     font-weight: bold;
     color: #37386766;
 }
 
-/* separation bars */
-
-.sep-bar-green {
-    height: 9px;
-    background-color: #AACE9B;
-    border: none;
+.social-media-imgs img {
+    width: 46px;
+    height: 46px;
+    margin-top: 40px;
+    margin-right: 35px;
 }
 
+.social-media-imgs a {
+    display: inline-block;
+}
+
+/* separation bars */
 .sep-bar-gen {
     height: 2px;
     background-color: #DDE1E3;
@@ -56,7 +55,6 @@ header {
 }
 
 /* MAIN SECTION */
-
 #welcome-page {
     height: 450px;
     padding-bottom: 270px;
@@ -116,38 +114,80 @@ header {
 }
 
 /* APP FEATURES SECTION*/
-/* App features title*/
-
 .app-features {
     margin-top: 50px;
-    background-color: red;
+    margin-bottom: 60px;
 }
 
+/* App features title*/
 .app-features h2 {
-    margin-bottom: 20px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    width: 220px;
+    border-bottom: 5px solid #AACE9B;
     font-size: 30px;
     font-weight: bold;
     color: #373867;
 }
 
 .app-features h3 {
+    position: relative;
+    margin-left: 150px;
+    top: 40px;
     font-size: 40px;
+    font-weight: bold;
     color: #373867;
 }
 
+.app-features p {
+    position: relative;
+    bottom: 40px;
+    margin-left: 150px;
+}
+
+#appointment {
+    width: 598px;
+}
+
+#membership {
+    position: relative;
+    float: right;
+    right: 50px;
+    bottom: 226px;
+    width: 598px;
+}
+
+#membership h3 {
+    width: 500px;
+}
+
+#schedule {
+    width: 598px;
+}
+
+#contact-suggestions {
+    position: relative;
+    right: 50px;
+    bottom: 225px;
+    float: right;
+    width: 598px;
+}
+
+#contact-suggestions h3 {
+    width: 500px;
+}
 
 /* Contact form section */
-
 #contact-form {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: yellow;
+    margin-top: 149px;
+    margin-bottom: 60px;
 }
 
 #contact-form h2 {
     color: #373867;
     font-size: 30px;
     font-weight: bold;
+    padding-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -157,23 +197,247 @@ form .sep-line-gen {
 }
 
 /* contact inputs positions */
-
-.form-name {
-    position: relative;
-    display: inline;
-}
-
-.form-surname {
-    position: relative;
-    display: inline;
-}
-
-.form-email {
-    position: relative;
-    display: inline;
-}
-
-.form-message #message {
-    position: relative;
+.form-gen label {
     display: block;
+    font-weight: bold;
+    color: #373867;
+}
+
+.form-gen input {
+    width: 585px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-indent: 8px;
+    height: 37px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    color: #9B9CB3;
+}
+
+.form-gen .form-name, .form-surname {
+    float: left;
+    margin-right: 205px;
+    width: 400px;
+}
+
+.form-gen select {
+    width: 900px;
+    margin-top: 14px;
+    margin-bottom: 25px;
+    height: 37px;
+    text-indent: 3px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: white;
+    color: #9B9CB3;
+}
+
+.form-message textarea {
+    width: 1796px;
+    height: 165px;
+    margin-top: 25px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    text-indent: 8px;
+    color: #9B9CB3;
+}
+
+.form-gen #btn-reset {
+    width: 154px;
+    height: 40px;
+    margin-top: 50px;
+    margin-right: 90px;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: bold;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: white;
+    color: #373867;
+}
+
+.form-gen #btn-submit {
+    width: 154px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867;
+}
+
+/* history section */
+#history-section {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: #9B9CB3;
+}
+
+#history-section h2 {
+    padding-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #373867;
+}
+
+#history-section h3 {
+    font-size: 20px;
+    color: #373867;
+}
+
+#history-section .history-part p {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-left: 5px solid black;
+    padding-left: 20px;
+}
+
+/* origin */
+#history-section .origin-part {
+    width: 685px;
+}
+
+#history-section h3{
+    width: 685px;
+    margin-bottom: 50px;
+}
+
+#history-section .origin-part p{
+    width: 685px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+#history-section .origin-part img{
+    width: 685px;
+    padding-top: 40px;
+}
+
+/* mission */
+#history-section .mission-part {
+    width: 685px;
+    position: relative;
+    bottom: 390px;
+    float: right;
+}
+
+#history-section .mission-part img {
+    position: relative;
+    bottom: 135px;
+}
+
+#history-section .mission-part h3 {
+    position: relative;
+    bottom: 110px;
+}
+
+#history-section .mission-part p {
+    position: relative;
+    bottom: 110px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+/* ACTIVITIES SECTION */
+.activities-section {
+    padding-top: 100px;
+    margin-top: 60px;
+}
+
+.activities-section h2 {
+    position: relative;
+    margin-left: 210px;
+    bottom: 170px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #373867;
+}
+
+.activities-section li {
+    position: relative;
+    margin-left: 215px;
+    bottom: 140px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #373867;
+}
+
+#activities {
+    width: 800px;
+}
+
+#black-member {
+    position: relative;
+    bottom: 510px;
+    float: right;
+    width: 800px;
+}
+
+#classic-member {
+    width: 800px;
+}
+
+#only-classes {
+    position: relative;
+    bottom: 225px;
+    left: 800px;
+    float: right;
+    width: 800px;
+}
+
+/* pages numbers */
+.pages {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.pages ul {
+    display: inline-block;
+    margin-top: 90px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #AACE9B;
+}
+
+.pages li {
+    position: relative;
+    left: 410px;
+    float: left;
+    padding: 5px 15px;
+    margin-left: 20px;
+    list-style: none;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+footer {
+    border-top: 9px solid #AACE9B;
+    position: relative;
+    top: 3200px;
+    left: 0px;
+}
+
+footer img {
+    height: 46px;
+    margin-right: 30px;
+}
+
+footer p {
+    position: relative;
+    margin-top: 50px;
+    left: 740px;
+}
+
+footer nav {
+    margin-top: 50px;
+    position: relative;
+    left: 740px;
 }

@@ -14,8 +14,9 @@
 </head>
     <body>
         <header>
-            <img class="menu-icon" src="assets/imgs/menuopen.png" alt="Menu icon">
-            <p class="header-title"> Mega Rocket </p>
+            <div class="title">
+                <p> Mega Rocket </p>
+            </div>
             <nav>
                 <div class="social-media-imgs">
                     <a href="https://www.linkedin.com/" target="_blank">
@@ -80,174 +81,171 @@
                     <img src="assets/imgs/people-working-photo.png" alt="People working on gym">
                 </div>
             </section>
-
-            <div class="sep-bar-gen"></div>
-
+            <div class="sep-bar-gen">
             <section class="app-features">
                 <h2>App Features</h2>
-                    <div class="app-box-left">
-                        <h3>Appointment booking</h3>
-                        <img src="assets/imgs/vector1.png" alt="Appointment booking">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-
-                    <div class="app-box-left">
-                        <h3>Schedule and timetables</h3>
-                        <img src="assets/imgs/vector2.png" alt="Schedule and timetables">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-                            and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-
-                    <div class="app-box-right">
-                        <h3>Membership management</h3>
-                        <img src="assets/imgs/vector3.png" alt="Membership management">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-                            and scrambled it to make a type specimen book.
-                        </p>
-
-                    </div class="app-box-right">
-                        <h3>Contact and suggestions</h3>
-                        <img src="assets/imgs/vector4.png" alt="Contact and suggestions">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-                            and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-
+                <div id="appointment">
+                    <h3>Appointment booking</h3>
+                    <img src="assets/imgs/vector1.png" alt="Appointment booking">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div id="membership">
+                    <h3>Membership management</h3>
+                    <img src="assets/imgs/vector3.png" alt="Membership management">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div id="schedule">
+                    <h3>Schedule and timetables</h3>
+                    <img src="assets/imgs/vector2.png" alt="Schedule and timetables">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div id="contact-suggestions">
+                    <h3>Contact and suggestions</h3>
+                    <img src="assets/imgs/vector4.png" alt="Contact and suggestions">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
             </section>
-
-            <div class="sep-bar-gen"></div>
-
+            <div class="sep-bar-gen">
             <section id="contact-form">
                 <h2>Contact</h2>
-
-                <form>
+                <form class="form-gen">
                     <div class="form-name">
                         <label for="name">Name</label>
                         <input type="text" id="name" placeholder="Write here" name="name" required>
                     </div>
-
                     <div class="form-surname">
                         <label for="surname">Last name</label>
                         <input type="text" id="surname" name="surname" placeholder="Write here" required>
                     </div>
-
                     <div class="form-email">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Write here" name="email" required>
                     </div>
-
-                    <div class="form-contact-reason">
-                        <label for="contact-reason">Contact Reason</label>
+                    <div class="form-reason">
+                        <label for="reason">Contact Reason</label>
                         <select>
                             <option value="option1" required>I want to know about membership and cost</option>
                             <option value="option2" required>I want to make a question or suggestion</option>
                             <option value="option3" required>I want to make a contact</option>
                         </select>
                     </div>
-
                     <div class="form-message">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Write here" required></textarea>
                     </div>
-
-                    <button class="reset-button" type="reset">Clear</button>
-                    <button class="send-message-button" type="submit">Send It</button>
+                    <div>
+                        <button id="btn-reset" type="reset">Clear</button>
+                        <button id="btn-submit" type="submit">Send It</button>
+                    </div>
                 </form>
-
             </section>
-
-            <div class="sep-bar-gen"></div>
-            
+            <div class="sep-bar-gen">
             <section id="history-section">
-                <h2>History</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper 
-                    erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
-                    egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci 
-                    luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies 
-                </p>
-                <h3>Origin</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper
-                    erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
-                    egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus 
-                    orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor 
-                    vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend odio 
-                    tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-                    curae; Phasellus dignissim imperdiet
-                </p>
-                <img src="assets/imgs/origin.png" alt="Origin gym photo">
-                <h3>Mission</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper
-                    erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
-                    egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus 
-                    orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor 
-                    vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend odio 
-                    tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-                    curae; Phasellus dignissim imperdiet
-                </p>
-                <img src="assets/imgs/mission.png" alt="Mission photo">
+                <div class="history-part">
+                    <h2>History</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper 
+                        erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
+                        egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci 
+                        luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies 
+                    </p>
+                </div>
+                <div class="origin-part">
+                    <h3>Origin</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper
+                        erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
+                        egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus 
+                        orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor 
+                        vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend odio 
+                        tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                        curae; Phasellus dignissim imperdiet
+                    </p>
+                    <img src="assets/imgs/history-pic1.png" alt="Origin gym">
+                </div>
+                <div class="mission-part">
+                    <img src="assets/imgs/history-pic2.png" alt="Mission">
+                    <h3>Mission</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper
+                        erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
+                        egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus 
+                        orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor 
+                        vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend odio 
+                        tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                        curae; Phasellus dignissim imperdiet
+                    </p>
+                </div>
             </section>
-            <section id="activities">
-                <img src="assets/imgs/activities.png" alt="Activities image">
-                <h2>Activities</h2>
-                <ol>
-                    <li>Crossfit</li>
-                    <li>Spinning</li>
-                    <li>Functional</li>
-                    <li>Boxing</li>
-                    <li>Fitness</li>
-                </ol>
-            </section>
-            <section id="classic-member">
-                <img src="assets/imgs/classicmember.jpg" alt="Classic member image">
-                <h2>Classic Membership</h2>
-                <ol>
-                    <li>Free pass to the weight room</li>
-                    <li>Personalized follow up by a trainer</li>
-                    <li>Grid visualization</li>
-                </ol>
-            </section>
-            <section id="black-member">
-                <img src="assets/imgs/blackmember.png" alt="Black member image">
-                <h2>Black Membership</h2>
-                <ol>
-                    <li>Free pass to the weight room</li>
-                    <li>Free pass to the lessons (previously enrolled)</li>
-                    <li>Personalized follow up by a trainer</li>
-                    <li>Grid visualization</li>
-                </ol>
-            </section>
-            <section id="only-classes">
-                <img src="assets/imgs/onlyclasses.png" alt="Only Classes image">
-                <h2>Only Classes Membership</h2>
-                <ol>
-                    <li>Free pass to the weight room</li>
-                    <li>Grid visualization</li>
-                </ol>
-            </section>
-            <nav>
-                <button type="button">prev</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">...</button>
-                <button type="button">next</button>
-            </nav>
+            <div class="sep-bar-gen">
+            <div class="activities-section">
+                <section id="activities">
+                    <img src="assets/imgs/activities.png" alt="Activities">
+                    <h2>Activities</h2>
+                    <ol>
+                        <li>Crossfit</li>
+                        <li>Spinning</li>
+                        <li>Functional</li>
+                        <li>Boxing</li>
+                        <li>Fitness</li>
+                    </ol>
+                </section>
+                <section id="classic-member">
+                    <img src="assets/imgs/classicmember.png" alt="Classic member">
+                    <h2>Classic Membership</h2>
+                    <ol>
+                        <li>Free pass to the weight room</li>
+                        <li>Personalized follow up by a trainer</li>
+                        <li>Grid visualization</li>
+                    </ol>
+                </section>
+                <section id="black-member">
+                    <img src="assets/imgs/blackmember.png" alt="Black member">
+                    <h2>Black Membership</h2>
+                    <ol>
+                        <li>Free pass to the weight room</li>
+                        <li>Free pass to the lessons (previously enrolled)</li>
+                        <li>Personalized follow up by a trainer</li>
+                        <li>Grid visualization</li>
+                    </ol>
+                </section>
+                <section id="only-classes">
+                    <img src="assets/imgs/onlyclasses.png" alt="Only Classes">
+                    <h2>Only Classes Membership</h2>
+                    <ol>
+                        <li>Free pass to the weight room</li>
+                        <li>Grid visualization</li>
+                    </ol>
+                </section>
+                <div class="pages">
+                    <ul>
+                        <li><a href="#">PREV</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">NEXT</a></li>
+                    </ul>
+                </div>
+            </div>
         </main>
         <footer>
             <nav>
