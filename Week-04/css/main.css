@@ -1,0 +1,213 @@
+/* general */
+.sep-bar-gen {
+    background-color: black;
+    height: 1px;
+}
+
+main {
+    margin: 3%;
+}
+
+/* welcome page */
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-left h1 {
+    font-size: 40px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+}
+
+.wp-left h2 {
+    font-size: 25px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.wp-right {
+    margin-top: 8vh;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wp-right img {
+    width: 95vw;
+}
+
+.wp-left button {
+    display: none;
+}
+
+.wp-left {
+    order: 1;
+    text-align: start;
+    width: 94vw;
+}
+
+.wp-right p {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+/* app-features section*/
+/* general */
+#app-features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+}
+
+#app-features h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2vh;
+    border-bottom: 20px solid black;
+    max-width: 45vw;
+    width: 100%;
+}
+
+#app-features h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+#app-features p {
+    margin-bottom: 3vh;
+}
+
+/* appointment */
+#appointment {
+    display: flex;
+    background-color: yellow;
+    flex-direction: column;
+}
+
+#appointment img {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    order: -1;
+    width: 17vw;
+}
+
+/* membership */
+#membership {
+    display: flex;
+    background-color: rgb(141, 141, 113);
+    flex-direction: column;
+}
+
+#membership img {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    order: -1;
+    width: 17vw;
+}
+
+/* schedule */
+#schedule {
+    display: flex;
+    background-color: rgb(212, 212, 41);
+    flex-direction: column;
+}
+
+#schedule img {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    order: -1;
+    width: 17vw;
+}
+
+/* contact and suggestions */
+#contact-suggestions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+#contact-suggestions img {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    order: -1;
+    width: 17vw;
+}
+
+/* contact form */
+#form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form h2 {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5vh 0;
+}
+
+.form-name,.form-surname,.form-email,#form-reason,#form-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#form-container label {
+    margin-bottom: 2vh;
+    color: #373867;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="email"] {
+    padding: 5px;
+    border: 1px solid #373867;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #23943f;
+    text-indent: 2vw;
+}
+
+.form-reason label,#form-reason select {
+    display: block;
+}
+
+#form-reason label {
+    margin: 2vh 0;
+}
+
+#form-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94vw;
+    margin: 3vh 0;
+}
+
+#form-buttons button[id="btn-reset"] {
+    color: #373867;
+    width: 85px;
+    height: 30px;
+    margin-bottom: 2vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#form-buttons button[id="btn-submit"] {
+    color: #373867;
+    width: 85px;
+    height: 30px;
+    margin-bottom: 2vh;
+    background-color: #AACE9B;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+}

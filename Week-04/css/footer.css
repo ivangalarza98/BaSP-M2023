@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 0;
+}
+
+footer img {
+    max-width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+footer #copy-text, footer #copy-text2 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+

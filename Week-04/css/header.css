@@ -1,0 +1,43 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid green;
+    flex-wrap: nowrap;
+    height: 6vh;
+    margin: 0 3%;
+    background-color: white;
+}
+
+#header-container-left {
+    display: inline-flex;
+}
+
+.menu-icon-container img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 1.2em;
+    max-width: 80%;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.header-socialmedia {
+    max-width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.header-socialmedia img {
+    max-width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
