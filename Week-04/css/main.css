@@ -18,26 +18,26 @@ main {
 }
 
 .wp-left h1 {
-    font-size: 40px;
-    font-weight: bold;
     flex-wrap: nowrap;
     margin-top: 15px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .wp-left h2 {
-    font-size: 25px;
-    font-weight: bold;
     flex-wrap: nowrap;
     margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .wp-right {
-    margin-top: 8vh;
-    order: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    order: 2;
+    margin-top: 8vh;
 }
 .wp-right img {
     width: 95vw;
@@ -49,13 +49,12 @@ main {
 
 .wp-left {
     order: 1;
-    text-align: start;
     width: 94vw;
+    text-align: start;
 }
 
 .wp-right p {
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin: 6vh 0;
 }
 
 /* app-features section*/
@@ -76,9 +75,9 @@ main {
 }
 
 .app-border-bot {
-    background-color: #AACE9B;
     height: 7px;
     width: 225px;
+    background-color: #AACE9B;
 }
 
 #app-features h3 {
@@ -97,28 +96,11 @@ main {
     flex-direction: column;
 }
 
-/* appointment */
-#appointment img {
+#appointment img,#membership img,#schedule img,#contact-suggestions img {
+    order: -1;
     margin-top: 5vh;
     margin-bottom: 3vh;
-    order: -1;
-    width: 17vw;
-}
-
-/* membership */
-#membership img {
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    order: -1;
-    width: 17vw;
-}
-
-/* schedule */
-#schedule img {
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    order: -1;
-    width: 17vw;
+    width: 17vw;    
 }
 
 /* contact and suggestions */
@@ -128,13 +110,6 @@ main {
     margin-bottom: 3vh;
 }
 
-#contact-suggestions img {
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    order: -1;
-    width: 17vw;
-}
-
 /* contact form */
 #form-container {
     display: flex;
@@ -142,10 +117,10 @@ main {
 }
 
 #contact-form h2 {
-    color: red;
+    margin: 5vh 0;
     font-size: 1.5em;
     font-weight: bold;
-    margin: 5vh 0;
+    color: #373867;
 }
 
 .form-name,.form-surname,.form-email,#form-reason,#form-message {
@@ -156,17 +131,18 @@ main {
 
 #form-container label {
     margin-bottom: 2vh;
-    color: #373867;
     font-weight: bold;
+    color: #373867;
 }
 
-input[type="text"],input[type="email"] {
+input[type="text"],input[type="email"],#form-reason select {
     padding: 5px;
     border: 1px solid #373867;
     border-radius: 3px;
     font-size: 16px;
-    color: #23943f;
-    text-indent: 2vw;
+    text-indent: 5px;
+    background-color: white;
+    color: #9B9CB3;
 }
 
 .form-reason label,#form-reason select {
@@ -175,6 +151,16 @@ input[type="text"],input[type="email"] {
 
 #form-reason label {
     margin: 2vh 0;
+}
+
+#form-message label {
+    margin: 13px 0;
+}
+
+#form-message textarea {
+    font-size: 16px;
+    text-indent: 5px;
+    color: #9B9CB3;
 }
 
 #form-buttons {
@@ -186,24 +172,24 @@ input[type="text"],input[type="email"] {
 }
 
 #form-buttons button[id="btn-reset"] {
-    color: #373867;
     width: 85px;
     height: 30px;
     margin-bottom: 2vh;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;
     font-weight: bold;
+    border: 1px solid black;
     border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #373867;
 }
 
 #form-buttons button[id="btn-submit"] {
     width: 85px;
     height: 30px;
     margin-bottom: 2vh;
-    background-color: #AACE9B;
     font-weight: bold;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: #AACE9B;
     color: #373867;
 }
 
@@ -221,8 +207,8 @@ input[type="text"],input[type="email"] {
 
 #history-text-1 {
     padding-left: 8px;
-    border-left: 7px solid #373867;
     margin: 3vh 0;
+    border-left: 7px solid #373867;
 }
 
 #history-text-2 {
@@ -235,6 +221,11 @@ input[type="text"],input[type="email"] {
 
 #history-section h3 {
     font-size: 25px;
+    margin: 5px 0;
+}
+
+#mission-part h3 {
+    margin: 25px 0;
 }
 
 /* activities section */
@@ -242,11 +233,68 @@ input[type="text"],input[type="email"] {
 #activities-section {
     display: flex;
     flex-direction: column;
-    background-color: pink;
     margin: 5vh 0;
 }
 
 #activities-section img {
-    background-color: red;
-    justify-content: center;
+    margin: 40px 0;
 }
+
+#activities-section h2 {
+    margin: 25px 0;
+}
+
+#act-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#act-right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#activities-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #373867;
+}
+
+/* buttons */
+
+.pages {
+    text-align: center;
+}
+
+.pages ul {
+    display: inline-block;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #AACE9B;
+}
+
+.pages li {
+    display: inline-flex;
+    padding: 5px 15px;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+}
+
+/* final bar */
+
+#bottom-bar {
+    margin-top: 25px;
+    height: 9px;
+    background-color: #AACE9B;
+}
+
