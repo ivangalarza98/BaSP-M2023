@@ -24,7 +24,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: #F7FBF5;
 }
 
@@ -328,11 +327,24 @@ input[type="text"],input[type="email"],#form-reason select {
 }
 
 @media only screen and (min-width: 834px) {
+    /* main */
     .wp-right img {
         order: 1;
         margin-bottom: 50px;
     }
 
+    /* app features */
+    #appointment,#membership,#schedule,#contact-suggestions {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #appointment-2,#membership-2,#schedule-2,#contact-suggestions-2 {
+        margin-left: 25px;
+        padding: 10px;
+    }
+
+    /* form */
     #form-buttons {
         display: inline;
         margin: 3vh 0;
@@ -344,10 +356,10 @@ input[type="text"],input[type="email"],#form-reason select {
         margin-right: 25px;
     }
 
+    /* history */
     #origin-part img {
         width: 45%;
         display: inline-block;
-
     }
 
     #history-images img {
@@ -359,7 +371,69 @@ input[type="text"],input[type="email"],#form-reason select {
 @media only screen and (min-width: 1512px) {
     .wp-left button {
         display: block;
+        order: 3;
+    }
+
+    #welcome-page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    #menu-sidebar {
+        display: block;
+        flex-basis: 250px;
+        background-color: red;
+        width: 250px;
+    }
+      
+    .wp-left,.wp-right {
+        flex-basis: calc(50% - 250px);
+    }
+      
+    .wp-right {
+        flex-grow: 1;
+        background-color: yellow;
+    }
+    
+    /* app features */
+
+    #appointment,#membership,#schedule,#contact-suggestions {
+        width: 45%;
+    }
+
+    #app-features {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* form */
+
+    #form-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-name,.form-surname,.form-email {
+        width: 32%;
+    }
+
+    /* activities */
+
+    #activities-img {
+
+    }
+
+    #activities-text {
+
+    }
+
+    #activities-section {
+        flex-direction: row;
+    }
+
+    #act-left-container, #act-right-container {
+
+        width: 47vw;
     }
 }
-
 

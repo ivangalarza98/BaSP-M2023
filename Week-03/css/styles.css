@@ -61,8 +61,8 @@ header nav {
     padding-top: 12px;
     margin-top: 5px;
     margin-bottom: 50px;
-    background-color: #F7FBF5;
     border-bottom: 20px rgb(0, 255, 55);
+    background-color: #F7FBF5;
 }
 
 .wp-left {
@@ -93,24 +93,23 @@ header nav {
 }
 
 .btn-green {
-    color: #373867;
     width: 154px;
     height: 49px;
     margin-top: 50px;
     margin-left: 12px;
-    background-color: #AACE9B;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     line-height: 18.75px;
     font-weight: bold;
+    background-color: #AACE9B;
+    color: #373867;
 }
 
 .wp-right img{
     width: 625px;
     height: 625px;
-    margin-left: 1180px;
-    margin-top: -580px;
+    
 }
 
 /* APP FEATURES SECTION*/
