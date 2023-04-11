@@ -3,3 +3,363 @@
 #menu-sidebar {
     display: none;
 }
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* general */
+.sep-bar-gen {
+    background-color: black;
+    height: 1px;
+}
+
+main {
+    margin: 3%;
+}
+
+/* welcome page */
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7FBF5;
+}
+
+.wp-left h1 {
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #373867;
+}
+
+.wp-left h2 {
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9B9CB3;
+}
+
+.wp-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    margin-top: 8vh;
+}
+
+.wp-right img {
+    width: 95vw;
+}
+
+.wp-left button {
+    display: none;
+}
+
+.wp-left {
+    order: 1;
+    width: 94vw;
+    text-align: start;
+}
+
+.wp-right p {
+    margin: 6vh 0;
+    color: #9B9CB3;
+}
+
+/* app-features section*/
+/* general */
+#app-features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+}
+
+#app-features h2 {
+    padding-bottom: 2vh;
+    max-width: 45vw;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #373867;
+}
+
+.app-border-bot {
+    height: 7px;
+    width: 225px;
+    background-color: #AACE9B;
+}
+
+#app-features h3 {
+    margin-bottom: 2vh;
+    font-size: 40px;
+    font-weight: bold;
+    color: #373867;
+}
+
+#app-features p {
+    margin-bottom: 3vh;
+    color: #373867;
+}
+
+#appointment,#membership,#schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+#appointment img,#membership img,#schedule img,#contact-suggestions img {
+    order: -1;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    width: 17vw;    
+}
+
+/* contact and suggestions */
+#contact-suggestions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+/* contact form */
+#form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form h2 {
+    margin: 5vh 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373867;
+}
+
+.form-name,.form-surname,.form-email,#form-reason,#form-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#form-container label {
+    margin-bottom: 2vh;
+    font-weight: bold;
+    color: #373867;
+}
+
+input[type="text"],input[type="email"],#form-reason select {
+    padding: 5px;
+    border: 1px solid #373867;
+    border-radius: 3px;
+    font-size: 16px;
+    text-indent: 5px;
+    background-color: white;
+    color: #9B9CB3;
+}
+
+.form-reason label,#form-reason select {
+    display: block;
+}
+
+#form-reason label {
+    margin: 2vh 0;
+}
+
+#form-message label {
+    margin: 13px 0;
+}
+
+#form-message textarea {
+    font-size: 16px;
+    text-indent: 5px;
+    color: #9B9CB3;
+}
+
+#form-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94vw;
+    margin: 3vh 0;
+}
+
+#form-buttons button[id="btn-reset"] {
+    width: 85px;
+    height: 30px;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #373867;
+}
+
+#form-buttons button[id="btn-submit"] {
+    width: 85px;
+    height: 30px;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867;
+}
+
+/* history section */
+
+#history-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+
+#history-text-1 {
+    padding-left: 8px;
+    margin: 3vh 0;
+    border-left: 7px solid #373867;
+}
+
+#history-text-2 {
+    margin: 3vh 0;
+}
+
+#history-section h2 {
+    font-size: 45px;
+}
+
+#history-section h3 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+#mission-part h3 {
+    margin: 25px 0;
+}
+
+#history-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94vw;
+}
+
+#history-images img {
+    flex-shrink: 1;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* activities section */
+
+#activities-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+
+#activities-section img {
+    margin: 40px 0;
+}
+
+#activities-section h2 {
+    margin: 25px 0;
+}
+
+#act-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#act-right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#activities-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #373867;
+}
+
+/* buttons */
+
+.pages {
+    text-align: center;
+}
+
+.pages ul {
+    display: inline-block;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #AACE9B;
+}
+
+.pages li {
+    display: inline-flex;
+    padding: 5px 15px;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+}
+
+/* final bar */
+
+#bottom-bar {
+    margin-top: 25px;
+    height: 9px;
+    background-color: #AACE9B;
+}
+
+@media only screen and (min-width: 390px) {
+
+}
+
+@media only screen and (min-width: 834px) {
+    .wp-right img {
+        order: 1;
+        margin-bottom: 50px;
+    }
+
+    #form-buttons {
+        display: inline;
+        margin: 3vh 0;
+    }
+
+    #form-buttons button {
+        display: inline;
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+
+    #origin-part img {
+        width: 45%;
+        display: inline-block;
+
+    }
+
+    #history-images img {
+        width: 47vw;
+    }
+      
+}
+
+@media only screen and (min-width: 1512px) {
+    .wp-left button {
+        display: block;
+    }
+}
+
+
