@@ -52,7 +52,8 @@ We continue applying the css, but now using flexbox and making the page responsi
 
 We also create the github page to display the page:
 
-This is [My Github Page](https://ivangalarza98.github.io/BaSP-M2023/Week-04/index.html)
+This is My Github Page:
+https://ivangalarza98.github.io/BaSP-M2023/Week-04/index.html
 
 ```
 
